@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div id="calendar"></div>
+    <script>
+        // Load FullCalendar
+        $(document).ready(function() {
+            $('#calendar').fullCalendar({
+                // Customize the calendar as needed
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                // Event sources for bookings
+                events: {
+                    url: 'https://api.github.com/repos/your-username/room-bookings-repo/get_bookings_json',
+                    type: 'GET',
+                    headers: {
+                    },
+                    data: {
+                        format: 'json'
+                    },
+                    error: function() {
+                        alert('There was an error fetching events!');
+                    },
+                },
+            });
+        });
+    </script>
 </body>
 </html>
