@@ -1,5 +1,0 @@
-https://github.com/gitwatch/gitwatch
-
-git clone https://github.com/gitwatch/gitwatch.git
-cd gitwatch
-[sudo] install -b gitwatch.sh /usr/local/bin/gitwatch
