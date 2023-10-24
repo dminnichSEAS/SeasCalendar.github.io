@@ -1,2 +1,3 @@
 1698153771	dGVzdA==	dominicminnich@gmail.com	double	Um9vbSA0LCBSb29tIDg=	2023-10-25	09:22	12:22	180	Visible	Tm90ZXMuLi4=
 1698154210	RHJpdmU=	dominicminnich@gmail.com	double	Um9vbSAzLCBSb29tIDY=	2023-10-27	09:31	10:31	60	Visible	Tm90ZXMuLi4=
+1698155291	bnVtZXJvMw==	dominicminnich@gmail.com	single	Um9vbSA5	2023-10-25	06:48	07:33	45	Visible	Tm90ZXMuLi4=
