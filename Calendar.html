@@ -9,28 +9,52 @@
 <body>
     <div id="calendar"></div>
     <script>
-        // Load FullCalendar
         $(document).ready(function() {
             $('#calendar').fullCalendar({
-                // Customize the calendar as needed
                 header: {
                     left: 'prev,next today',
                     center: 'title',
                     right: 'month,agendaWeek,agendaDay'
                 },
-                // Event sources for bookings
-                events: {
-                    url: 'https://api.github.com/repos/your-username/room-bookings-repo/get_bookings_json',
-                    type: 'GET',
-                    headers: {
-                    },
-                    data: {
-                        format: 'json'
-                    },
-                    error: function() {
-                        alert('There was an error fetching events!');
-                    },
+                events: function(start, end, timezone, callback) {
+                    // Fetch and parse the data from booking.txt
+                    $.get('bookings.txt', function(data) {
+                        var events = [];
+                        var lines = data.split('\n');
+                        
+                        for (var i = 0; i < lines.length; i++) {
+                            var parts = lines[i].split('\t');
+                            if (parts.length >= 11) {
+                                var event_id = parts[0];
+                                var event_name = atob(parts[1]); // Decode part 1
+                                var contact_email = parts[2];
+                                var type = parts[3];
+                                var rooms_reserved = atob(parts[4]); // Decode part 4
+                                var event_date = parts[5];
+                                var event_startTime = parts[6];
+                                var event_endTime = parts[7];
+                                var even_duration = parts[8];
+                                var visibility = parts[9];
+                                var event_notes = atob(parts[10]); // Decode part 10
+
+                                if (visibility === 'Visible') {
+                                    events.push({
+                                        id: event_id,
+                                        title: event_name,
+                                        start: event_date + 'T' + event_startTime,
+                                        end: event_date + 'T' + event_endTime,
+                                        description: event_notes,
+                                        // You can add more properties as needed
+                                    });
+                                }
+                            }
+                        }
+                        callback(events);
+                    });
                 },
+                eventClick: function(calEvent, jsEvent, view) {
+                    alert('Event: ' + calEvent.title + '\nDescription: ' + calEvent.description);
+                }
             });
         });
     </script>
