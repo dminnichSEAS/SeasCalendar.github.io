@@ -1,12 +1,15 @@
+# run with --> python auto_commit_local.py
 import os
 import subprocess
 import time
 
 # Define the repository path
-repo_path = 'C:/Users/domin/Dropbox/_HTML/TSv3'
+repo_path = 'C:/Users/seas/Desktop/CalendarRepoClone/SeasCalendar.github.io'
+
 
 # Define the file to monitor for changes
 file_to_monitor = 'bookings.txt'
+
 
 def is_file_modified(file_path):
     # Check if the file has been modified
