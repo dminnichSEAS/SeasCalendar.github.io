@@ -6,13 +6,75 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
     <style>
-        body{
-            background-color: rgb(199, 199, 199);
+        #calendar {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(136, 123, 123, 0.966);
+            border-radius: 10px;
+            padding: 10px;
         }
+
+        .fc-event {
+            cursor: pointer;
+        }
+
+        .fc-event-title {
+            font-size: 1.1em;
+        }
+
+        .fc-event-time {
+            font-size: 0.9em;
+        }
+
+        .fc-event-location {
+            font-size: 0.9em;
+        }
+
+        .fc-event-description {
+            font-size: 0.9em;
+        }
+
+        .fc-event-rooms {
+            font-size: 0.9em;
+        }
+
+ 
+        .fc th, .fc td {
+            color: #000000;
+            font-size: 1.1em;
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #background img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .fc-today {
+            background-color: rgb(70, 70, 70) !important;
+            color: #ffffff !important;
+        }
+
     </style>
 </head>
 <body>
+    <div id='background'>
+        <img src="background.jpg" style="width:100%;height:100%;position:absolute;top:0px;left:0px;z-index:-1;" />
     <div id="calendar"></div>
+</div>
     <script>
         $(document).ready(function() {
             $('#calendar').fullCalendar({
