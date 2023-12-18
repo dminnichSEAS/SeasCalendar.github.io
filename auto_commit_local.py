@@ -34,7 +34,7 @@ def main():
             content = source_file.read()
 
 # Open the destination file in append mode
-            with open('bookings.txt', 'a') as destination_file:
+            with open('bookings.txt', 'w') as destination_file:
     # Write the content
                 destination_file.write(content)
 
