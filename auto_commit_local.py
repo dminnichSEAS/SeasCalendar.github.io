@@ -47,7 +47,7 @@ def main():
             print(f"No changes in {file_to_monitor}.")
 
         # Wait for a certain interval before checking again (e.g., every 60 seconds)
-        time.sleep(10)
+        time.sleep(100)
 
 
 if __name__ == '__main__':
