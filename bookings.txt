@@ -1,8 +1,0 @@
-917040MM29	UHJheWluZw==	dominicminnich@gmail.com	double	Um9vbSA0LCBSb29tIDg=	2023-12-25	01:30	03:30	120	Visible	Tm90ZXMuLi4=
-9170405L50	UHJheWluZw==	dominicminnich@gmail.com	double	Um9vbSA0LCBSb29tIDg=	2023-12-18	01:30	03:30	120	Visible	Tm90ZXMuLi4=
-917362E75N	UHJheWluZyAy	dominicminnich@gmail.com	triple	Um9vbSAzLCBSb29tIDYsIFJvb20gOQ==	2023-12-06	01:40	03:40	120	Visible	Tm90ZXMuLi4=
-9196525K8B	QQ==	dominicminnich@gmail.com	single	Um9vbSA1	2024-01-01	12:15	14:15	120	Visible	Tm90ZXMuLi4=
-919703RHSK	Qg==	dominicminnich@gmail.com	single	Um9vbSA0	2024-02-01	14:14	17:44	210	Visible	Tm90ZXMuLi4=
-9282904ITW	dGVzdGluZyBzY291dCByb29tIGFuZCBzIGF0cml1bQ==	dominicminnich@gmail.com	double	U2NvdXQgUm9vbSwgU2Nob29sIEF0cml1bQ==	2023-12-20	18:37	19:37	60	Visible	Tm90ZXMuLi4=
-9282908SRG	dGVzdGluZyBzY291dCByb29tIGFuZCBzIGF0cml1bQ==	dominicminnich@gmail.com	double	U2NvdXQgUm9vbSwgU2Nob29sIEF0cml1bQ==	2023-12-27	18:37	19:37	60	Visible	Tm90ZXMuLi4=
-928290SW3A	dGVzdGluZyBzY291dCByb29tIGFuZCBzIGF0cml1bQ==	dominicminnich@gmail.com	double	U2NvdXQgUm9vbSwgU2Nob29sIEF0cml1bQ==	2023-12-13	18:37	19:37	60	Visible	Tm90ZXMuLi4=
